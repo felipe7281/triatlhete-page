@@ -1,4 +1,4 @@
-export function Conquistas() {
+export default function Conquistas() {
   return (
     <div>
       <h1>Conquistas - Em construção</h1>
