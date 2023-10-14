@@ -1,6 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import coverImage from '../../public/homeImages/bikeCover.jpg'
+import 'tailwindcss/tailwind.css'
+import Main from './components/Main'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +21,8 @@ export default function RootLayout({
     <html lang="pt-Br">
       <body className={inter.className}>
         <div>
-          <main>{children}</main>
+          <Main title="Home" backgroundImage={coverImage} imageAlt="" />
+          {children}
         </div>
       </body>
     </html>
