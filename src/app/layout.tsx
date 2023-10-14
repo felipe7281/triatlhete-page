@@ -1,4 +1,3 @@
-import { Sidebar } from './components/Sidebar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -18,9 +17,8 @@ export default function RootLayout({
   return (
     <html lang="pt-Br">
       <body className={inter.className}>
-        <div className="grid min-h-screen grid-cols-app bg-teal-950">
-          <Sidebar />
-          <main className="px-4 pb-12 pt-8">{children}</main>
+        <div>
+          <main>{children}</main>
         </div>
       </body>
     </html>
